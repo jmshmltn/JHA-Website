@@ -141,26 +141,14 @@
             transition: all 0.3s ease;
         }
         
-        /* ICA-inspired asymmetrical layout */
-        .artwork:nth-child(1) { 
-            grid-column: 1 / 6; 
-        }
-        .artwork:nth-child(2) { 
-            grid-column: 7 / 12; 
-        }
-        .artwork:nth-child(3) { 
-            grid-column: 1 / 5; 
-        }
-        .artwork:nth-child(4) { 
-            grid-column: 6 / 10; 
-        }
-        .artwork:nth-child(5) { 
-            grid-column: 11 / 13; 
-        }
-        .artwork:nth-child(6) { 
-            grid-column: 3 / 8; 
-            margin-top: 40px;
-        }
+        /* Asymmetrical layout — 7 works */
+        .artwork:nth-child(1) { grid-column: 1 / 6; }
+        .artwork:nth-child(2) { grid-column: 7 / 12; }
+        .artwork:nth-child(3) { grid-column: 1 / 5; }
+        .artwork:nth-child(4) { grid-column: 6 / 10; }
+        .artwork:nth-child(5) { grid-column: 11 / 13; }
+        .artwork:nth-child(6) { grid-column: 3 / 8; margin-top: 40px; }
+        .artwork:nth-child(7) { grid-column: 8 / 13; margin-top: 40px; }
         
         .artwork img {
             width: 100%;
@@ -297,7 +285,8 @@
                 grid-column: 1 !important;
             }
             
-            .artwork:nth-child(6) {
+            .artwork:nth-child(6),
+            .artwork:nth-child(7) {
                 margin-top: 0;
             }
             
@@ -342,6 +331,7 @@
         .artwork:nth-child(4) { animation-delay: 0.4s; }
         .artwork:nth-child(5) { animation-delay: 0.5s; }
         .artwork:nth-child(6) { animation-delay: 0.6s; }
+        .artwork:nth-child(7) { animation-delay: 0.7s; }
         
         @keyframes fadeInUp {
             to {
@@ -418,6 +408,14 @@
                     <div class="artwork-info">
                         <div class="artwork-details">Oil on canvas</div>
                         <div class="artwork-year">2023</div>
+                    </div>
+                </div>
+
+                <div class="artwork">
+                    <img src="artwork7.jpg" alt="Oil painting on canvas, 2026">
+                    <div class="artwork-info">
+                        <div class="artwork-details">Oil on canvas</div>
+                        <div class="artwork-year">2026</div>
                     </div>
                 </div>
             </div>
